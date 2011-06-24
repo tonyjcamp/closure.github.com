@@ -4,7 +4,7 @@
  <title>closure</title>
  <link href="http://closure.github.com/feed/" rel="self"/>
  <link href="http://closure.github.com/"/>
- <updated>2011-06-23T20:36:18-07:00</updated>
+ <updated>2011-06-23T21:50:50-07:00</updated>
  <id>http://closure.github.com/</id>
  <author>
    <name>closure</name>
@@ -60,6 +60,60 @@
 
 &lt;pre&gt;&lt;code&gt;paths add /foo
 &lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Contribute to Closure Blog</title>
+   <link href="http://closure.github.com/2011/06/contributing"/>
+   <updated>2011-06-23T00:00:00-07:00</updated>
+   <id>http://closure.github.com/2011/06/contributing</id>
+   <content type="html">&lt;p&gt;by &lt;a href=&quot;http://github.com/ritch&quot;&gt;@ritch&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Why Open Source a Blog?&lt;/h2&gt;
+
+&lt;p&gt;This blog is open for the same reason our projects are open. We want to help the community so why not help the community help the community too? Meta? Meta.&lt;/p&gt;
+
+&lt;h2&gt;Fork&lt;/h2&gt;
+
+&lt;p&gt;If you want to contribute a post you're going to need to fork the &lt;a href=&quot;https://github.com/closure/closure.github.com&quot;&gt;closure.github.com&lt;/a&gt; repo.&lt;/p&gt;
+
+&lt;p&gt;After you have it locally, explore the contents to see how the blog is setup. The easiest way to write a new post is to copy an existing one, but to make it easier, I've created a TextMate bundle.&lt;/p&gt;
+
+&lt;p&gt;With the bundle installed, create a new .markdown file, using the proper naming convention, and type 'post' and hit tab.&lt;/p&gt;
+
+&lt;p&gt;That will give you this template:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+layout: post
+title: The Post Title
+author: @ritch
+excerpt:  A short descriptive sentence.
+comments: false
+---
+by &amp;lt;a href=&quot;http://github.com/ritch&quot;&amp;gt;@ritch&amp;lt;/a&amp;gt;
+
+##Background
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hit tab to navigate through the different required fields and start you post below. If you're not familiar with markdown, check it out &lt;a href=&quot;http://www.simpleeditions.com/59001/markdown-an-introduction&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Preview&lt;/h2&gt;
+
+&lt;p&gt;When you're all done writing your post in markdown, you can preview it by running jekyll on the project.&lt;/p&gt;
+
+&lt;p&gt;Installing jekyll is simple:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo gem install jekyll
+sudo easy_install Pygments
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once you have jekyll, you can preview the site by running:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;jekyll --auto --server
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will start a jekyll server at &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt;. You can change files and it will automatically regenerate the static site.&lt;/p&gt;
 </content>
  </entry>
  

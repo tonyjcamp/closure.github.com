@@ -120,6 +120,69 @@
 
   <article class="post">
 
+    <h3><a href="http://closure.github.com/2011/06/contributing" rel="bookmark permalink" title="Permanent link to this post">Contribute to Closure Blog</a></h3>
+
+    <p>by <a href="http://github.com/ritch">@ritch</a></p>
+
+<h2>Why Open Source a Blog?</h2>
+
+<p>This blog is open for the same reason our projects are open. We want to help the community so why not help the community help the community too? Meta? Meta.</p>
+
+<h2>Fork</h2>
+
+<p>If you want to contribute a post you're going to need to fork the <a href="https://github.com/closure/closure.github.com">closure.github.com</a> repo.</p>
+
+<p>After you have it locally, explore the contents to see how the blog is setup. The easiest way to write a new post is to copy an existing one, but to make it easier, I've created a TextMate bundle.</p>
+
+<p>With the bundle installed, create a new .markdown file, using the proper naming convention, and type 'post' and hit tab.</p>
+
+<p>That will give you this template:</p>
+
+<pre><code>---
+layout: post
+title: The Post Title
+author: @ritch
+excerpt:  A short descriptive sentence.
+comments: false
+---
+by &lt;a href="http://github.com/ritch"&gt;@ritch&lt;/a&gt;
+
+##Background
+</code></pre>
+
+<p>Hit tab to navigate through the different required fields and start you post below. If you're not familiar with markdown, check it out <a href="http://www.simpleeditions.com/59001/markdown-an-introduction">here</a>.</p>
+
+<h2>Preview</h2>
+
+<p>When you're all done writing your post in markdown, you can preview it by running jekyll on the project.</p>
+
+<p>Installing jekyll is simple:</p>
+
+<pre><code>sudo gem install jekyll
+sudo easy_install Pygments
+</code></pre>
+
+<p>Once you have jekyll, you can preview the site by running:</p>
+
+<pre><code>jekyll --auto --server
+</code></pre>
+
+<p>This will start a jekyll server at <a href="http://localhost:4000">http://localhost:4000</a>. You can change files and it will automatically regenerate the static site.</p>
+
+
+  <div class="meta">
+   <div class="published">
+      Published: 2011-06-23
+      &mdash;
+      <a href="http://closure.github.com/2011/06/contributing#disqus_thread" title="Comments">Comments</a>
+   </div>
+  </div>
+
+
+  </article>
+
+  <article class="post">
+
     <h3><a href="http://closure.github.com/2011/06/symbox" rel="bookmark permalink" title="Permanent link to this post">Symbox</a></h3>
 
     <p>by <a href="http://github.com/ritch">@ritch</a></p>
