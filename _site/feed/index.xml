@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>closure</title>
+ <link href="http://closure.github.com/feed/" rel="self"/>
+ <link href="http://closure.github.com/"/>
+ <updated>2011-06-23T19:57:31-07:00</updated>
+ <id>http://closure.github.com/</id>
+ <author>
+   <name>closure</name>
+   <email>thomasjstein@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Hello World</title>
+   <link href="http://closure.github.com/2011/06/hello-world"/>
+   <updated>2011-06-24T00:00:00-07:00</updated>
+   <id>http://closure.github.com/2011/06/hello-world</id>
+   <content type="html">&lt;p&gt;Closure is a group of developers intoxicated by the simplicity of JavaScript.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
