@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Jekyll</string>
+	<key>ordering</key>
+	<array>
+		<string>95AD0239-87BB-43C4-8B21-7D22BCA03FB9</string>
+		<string>D1990E41-20CD-4068-B49A-334A566BA1DB</string>
+	</array>
+	<key>uuid</key>
+	<string>488CDC80-40D3-466C-BAB0-0750E4515F4B</string>
+</dict>
+</plist>
