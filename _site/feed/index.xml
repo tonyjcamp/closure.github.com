@@ -4,7 +4,7 @@
  <title>closure</title>
  <link href="http://closure.github.com/feed/" rel="self"/>
  <link href="http://closure.github.com/"/>
- <updated>2011-06-23T19:57:31-07:00</updated>
+ <updated>2011-06-23T20:36:18-07:00</updated>
  <id>http://closure.github.com/</id>
  <author>
    <name>closure</name>
@@ -18,6 +18,109 @@
    <updated>2011-06-24T00:00:00-07:00</updated>
    <id>http://closure.github.com/2011/06/hello-world</id>
    <content type="html">&lt;p&gt;Closure is a group of developers intoxicated by the simplicity of JavaScript.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Paths</title>
+   <link href="http://closure.github.com/2011/06/paths"/>
+   <updated>2011-06-23T00:00:00-07:00</updated>
+   <id>http://closure.github.com/2011/06/paths</id>
+   <content type="html">&lt;p&gt;by &lt;a href=&quot;http://github.com/ritch&quot;&gt;@ritch&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;On my various environments I can never remember how to add a directory to my path. Yes, admittedly it is not that hard to add a directory to your path in OSX. However there is a bit of work here that can be automated to make adding paths simpler and easier.&lt;/p&gt;
+
+&lt;p&gt;Thats where paths comes in; it’s a simple script written in nodejs that exposes the path to nodejs and as a simple CLI.&lt;/p&gt;
+
+&lt;p&gt;Install via npm&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install paths -g
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Want to see your $PATH in a more human readable format? Run the following in terminal&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;paths
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will return something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;PATHS
+/foo
+/opt/local/bin
+/opt/local/sbin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+/usr/local/bin
+/usr/X11/bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you want to add a path to your ~/.profile&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;paths add /foo
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Symbox</title>
+   <link href="http://closure.github.com/2011/06/symbox"/>
+   <updated>2011-06-22T00:00:00-07:00</updated>
+   <id>http://closure.github.com/2011/06/symbox</id>
+   <content type="html">&lt;p&gt;by &lt;a href=&quot;http://github.com/ritch&quot;&gt;@ritch&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;I’ve always had trouble keeping various files synced on my three computers. This makes setting up projects that I am working on a chore. That’s where Dropbox comes in. After figuring out that I can just symlink my projects to Dropbox, I rarely have to setup anything. It still felt a bit redundant though, so I built a utility that automates the setup of all the links between folders on Dropbox and my various computers.&lt;/p&gt;
+
+&lt;h2&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;Symbox is a script that lets you symlink folders without thinking about it. It requires nodejs, which you can get here. If you have npm you can simply run&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install symbox -g
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Otherwise you can install npm in one line and then run the above command.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;curl http://npmjs.org/install.sh | sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you want to locate your symbox config by running.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;symbox --config
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will return the location of the config for easy editing.&lt;/p&gt;
+
+&lt;p&gt;The default config should resemble the following.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &quot;root&quot;: &quot;~/Dropbox&quot;,
+    &quot;sync&quot;: {
+        // provide a key of the relative folder path to the dropbox root
+        // and a value of the folder on the current computer
+        // &quot;foo&quot;: &quot;~/Desktop/foo&quot;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Under the ‘sync’ object you’ll want to add any folders that you want to move into Dropbox and symlink back into place. A simple example of this for me is my nginx server configuration. In order to sync my nginx configuration on all my computers I setup my Symbox config like so.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{
+    &quot;root&quot;: &quot;~/Dropbox&quot;,
+    &quot;sync&quot;: {
+        &quot;nginx&quot;: &quot;/usr/local/etc/nginx&quot;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After I have modified my Symbox config, I can update my folders by running the following in terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;symbox
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Symbox will then move the nginx folder to my “root” Dropbox folder and add the symlink for me. All I have to do now is copy my configuration file to my other computers and run through the previous steps then voila my nginx config is the same on all my computers!&lt;/p&gt;
 </content>
  </entry>
  

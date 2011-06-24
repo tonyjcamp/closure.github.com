@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>Archives | closure</title>
+	<title>Paths | closure</title>
     <meta name="description" content="JavaScript Blog" />
     <meta name="author" content="Ritchie Martori" />
     <meta name="robots" content="index, follow" />
@@ -50,34 +50,73 @@
       <div class="span-16" id="content">
         <article class="post">
 
-  <h2>Archives</h2>
+  <h3><a href="http://closure.github.com/2011/06/paths" rel="bookmark permalink" title="Permanent link to this post">Paths</a></h3>
 
-    
-      2011-06-24<a href="http://closure.github.com/2011/06/hello-world" title="Hello World" rel="bookmark"><h4>Hello World</h4></a>
-      
-        <div class="archiveblock">
-          <a href="http://closure.github.com/2011/06/hello-world" title="Hello World" rel="bookmark">Closure is a group of developers intoxicated by the awesome simplicity of JavaScript.</a>
-        </div>
-      
-  
-      2011-06-23<a href="http://closure.github.com/2011/06/paths" title="Paths" rel="bookmark"><h4>Paths</h4></a>
-      
-        <div class="archiveblock">
-          <a href="http://closure.github.com/2011/06/paths" title="Paths" rel="bookmark">Adding a Directory to your Path Just Got Easier.</a>
-        </div>
-      
-  
-      2011-06-22<a href="http://closure.github.com/2011/06/symbox" title="Symbox" rel="bookmark"><h4>Symbox</h4></a>
-      
-        <div class="archiveblock">
-          <a href="http://closure.github.com/2011/06/symbox" title="Symbox" rel="bookmark">Symlink Folders on Separate Computers Using Dropbox.</a>
-        </div>
-      
-  
+  <p>by <a href="http://github.com/ritch">@ritch</a></p>
 
+<p>On my various environments I can never remember how to add a directory to my path. Yes, admittedly it is not that hard to add a directory to your path in OSX. However there is a bit of work here that can be automated to make adding paths simpler and easier.</p>
+
+<p>Thats where paths comes in; it’s a simple script written in nodejs that exposes the path to nodejs and as a simple CLI.</p>
+
+<p>Install via npm</p>
+
+<pre><code>npm install paths -g
+</code></pre>
+
+<p>Want to see your $PATH in a more human readable format? Run the following in terminal</p>
+
+<pre><code>paths
+</code></pre>
+
+<p>This will return something like this:</p>
+
+<pre><code>PATHS
+/foo
+/opt/local/bin
+/opt/local/sbin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+/usr/local/bin
+/usr/X11/bin
+</code></pre>
+
+<p>If you want to add a path to your ~/.profile</p>
+
+<pre><code>paths add /foo
+</code></pre>
+
+
+<a class="follow-box" href="https://twitter.com/closure">
+  <h3>You should probably follow <strong>@closure</strong> on Twitter</h3>
+  <p class="subtext">I'm a straight shooter with upper management written all over me.</p>
+</a>
+
+  <div class="meta">
+   <div class="published">
+    Published: 2011-06-23
+   </div>
+  </div>
 
 </article>
 
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'closure'; // required: replace example with your forum shortname
+
+    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+    // var disqus_identifier = 'unique_dynamic_id_1234';
+    var disqus_url = 'http://closure.github.com/2011/06/paths';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
       </div>
       <div class="span-5 last" id="sidebar">
         <div class="sidebarbox"> 
