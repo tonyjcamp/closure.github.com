@@ -15,37 +15,55 @@ body {
     padding-top: 15px;
 }
 #header h1 a {
-    color: #333333;
-    text-decoration: none;
+	color: #7F2C2C;
+	font-family: georgia;
+	font-style: italic;
+	font-size: 32px;
+	text-decoration: none;
+	text-shadow: 1px 2px 0 white;
 }
 #content {
     text-align: left;
+	color: #786B4B;
 }
 article {
     margin-right: 0;
+	color: #524838;
 }
 .post {
+	background: rgba(255,255,255, .25);
     font-size: 1.2em;
+	box-shadow: 1px 1px 0 #fff;
+	-moz-box-shadow: 1px 1px 0 #fff;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	margin-bottom: 20px;
+	padding: 10px; 
+}
+.post h1, .post h2, .post h3, .post h4, .post h5 {
+	color: #786B4B;
+	margin: 20px 0;
+    text-shadow: 1px 2px 0 white;
+}
+.post h2 {
+    font-size: 28px;
+}
+.post h2 a {
+    color: #786B4B;
 }
 .post h3 {
-    font-size: 36px;
-    margin: 20px 0;
+    font-size: 24px;
 }
 .post h3 a {
-    color: #597A9B;
-    font-size: 36px;
-    margin: 20px 0;
+    color: #786B4B;
 }
 .post .postbody {
     font-family: Georgia,"Times New Roman",serif;
 }
 .post .meta {
-    border-color: #E8E8E8;
-    border-style: double none;
-    border-width: 3px;
     color: #696969;
     font-family: georgia;
-    font-size: 100%;
+    font-size: 11px;
     font-style: italic;
     height: 23px;
     padding: 5px 0;
@@ -114,7 +132,6 @@ ul.links li.last:after, ul.links li.first:after {
 }
 #sidebar {
     margin-left: 35px;
-    margin-top: 55px;
     text-align: left;
 }
 #sidebar a {
@@ -124,9 +141,12 @@ ul.links li.last:after, ul.links li.first:after {
     margin-bottom: 10px;
 }
 #sidebar .sidebarbox h4 {
+	border-bottom: 1px solid #786B4B;
+	color: #786B4B;
+    text-shadow: 1px 2px 0 white;
     font-size: 20px;
     font-weight: normal;
-    margin: 10px 2px 2px;
+    margin: 0 2px 2px;
     padding-bottom: 5px;
 }
 #sidebar .sidebarbox p {
